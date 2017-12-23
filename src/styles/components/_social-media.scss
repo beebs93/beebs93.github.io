@@ -1,0 +1,17 @@
+.social-media-list {
+    .social-media-link {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 5.5rem;
+        line-height: 1;
+        color: $color-link-normal;
+
+        &:hover {
+            color: $color-link-hover;
+        }
+
+        &+ .social-media-link {
+            margin-left: 2.5rem;
+        }
+    }
+}

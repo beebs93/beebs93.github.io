@@ -1,0 +1,32 @@
+extends ../layouts/default
+
+block body-start
+    .container-fluid
+        .row
+            .col-xs-12.text-center
+                a.profile.me(href=paths.index)
+
+            .col-xs-12.text-center.text-shadow
+                h1 Bradley Beebe
+
+                p A Vancouver front-end software developer building complex web applications
+
+            .col-xs-12.text-center
+                .social-media-list
+                    a.social-media-link(
+                        href=urls.me.linkedin
+                        target="_blank"
+                    )
+                        i.fa.fa-linkedin
+
+                    a.social-media-link(
+                        href=urls.me.github
+                        target="_blank"
+                    )
+                        i.fa.fa-github
+
+                    a.social-media-link(
+                        href=urls.me.twitter
+                        target="_blank"
+                    )
+                        i.fa.fa-twitter

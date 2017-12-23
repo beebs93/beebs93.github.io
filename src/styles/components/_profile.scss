@@ -1,0 +1,19 @@
+.profile {
+    width: 16rem;
+    height: 16rem;
+    border: 0.5rem solid $color-link-normal;
+    border-radius: 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    background-size: contain;
+
+    &:hover {
+        border-color: $color-link-hover;
+    }
+
+    &.me {
+        background-image: url(/public/images/profiles/me.#{buildHash()}.jpg)
+    }
+}

@@ -1,0 +1,4 @@
+body {
+    padding-top: 2rem;
+    background: url(/public/images/backgrounds/default.#{buildHash()}.png) repeat scroll 0 0 transparent;
+}

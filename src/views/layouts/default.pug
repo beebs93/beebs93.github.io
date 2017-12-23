@@ -1,0 +1,44 @@
+doctype
+html(lang="en")
+    head
+        meta(charset="utf-8")
+
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        title #{meta.title}
+
+        meta(name="description" content=meta.description)
+
+        meta(property="og:site_name" content="Bradley Beebe")
+
+        meta(property="og:title" content=meta.title)
+
+        meta(property="og:description" content=meta.description)
+
+        meta(property="og:url" content=meta.url)
+
+        meta(property="og:image" content="https://beebs93.github.io/public/images/system/og-image." + appConfig.buildHash + ".jpg")
+
+        meta(property="og:type" content="website")
+
+        meta(property="og:locale" content="en_CA")
+
+        link(
+            media="all"
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/public/images/system/favicon." + appConfig.buildHash + ".ico"
+        )
+
+        block head-css
+            link(
+                media="all"
+                rel="stylesheet"
+                type="text/css"
+                href="/public/styles/index." + appConfig.buildHash + ".bundle.css"
+            )
+
+    body
+        block body-start
